@@ -25,7 +25,7 @@ public class PaymentSignatureExample {
             "/*[local-name()='CstmrCdtTrfInitn' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:pain.001.001.06']" +
             "/*[local-name()='SplmtryData' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:pain.001.001.06']" +
             "/*[local-name()='Envlp' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:pain.001.001.06']" +
-            "/*[local-name()='SngtrSt' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:pain.001.001.06']";
+            "/*[local-name()='SgntrSt' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:pain.001.001.06']";
 
     private static final List<Certificate> certificates = Lists.newArrayList(
     );
