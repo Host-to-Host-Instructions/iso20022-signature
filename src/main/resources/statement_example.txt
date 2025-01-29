@@ -34,8 +34,8 @@
     </RptgReq>
     <SplmtryData>
       <Envlp>
-        <SngtrSt>
-        </SngtrSt>
+        <SgntrSt>
+        </SgntrSt>
       </Envlp>
     </SplmtryData>
   </AcctRptgReq>

@@ -159,8 +159,8 @@
     </PmtInf>
     <SplmtryData>
       <Envlp>
-        <SngtrSt>
-        </SngtrSt>
+        <SgntrSt>
+        </SgntrSt>
       </Envlp>
     </SplmtryData>
   </CstmrCdtTrfInitn>

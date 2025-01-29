@@ -25,7 +25,7 @@ public class StatementSignatureExample {
             "/*[local-name()='AcctRptgReq' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:camt.060.001.03']" +
             "/*[local-name()='SplmtryData' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:camt.060.001.03']" +
             "/*[local-name()='Envlp' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:camt.060.001.03']" +
-            "/*[local-name()='SngtrSt' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:camt.060.001.03']";
+            "/*[local-name()='SgntrSt' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:camt.060.001.03']";
 
     private static final List<Certificate> certificates = Lists.newArrayList(
     );
