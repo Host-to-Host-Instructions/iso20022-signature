@@ -25,7 +25,7 @@ public class LetterSignatureExample {
             "/*[local-name()='CcyCtrlReqOrLttr' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:auth.026.001.01']" +
             "/*[local-name()='SplmtryData' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:auth.026.001.01']" +
             "/*[local-name()='Envlp' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:auth.026.001.01']" +
-            "/*[local-name()='SngtrSt' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:auth.026.001.01']";
+            "/*[local-name()='SgntrSt' and namespace-uri()='urn:iso:std:iso:20022:tech:xsd:auth.026.001.01']";
 
     private static final List<Certificate> certificates = Lists.newArrayList(
     );

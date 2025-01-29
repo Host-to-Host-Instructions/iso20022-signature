@@ -62,7 +62,7 @@
     </ReqOrLttr>
     <SplmtryData>
       <Envlp>
-      <SngtrSt><ds:Signature>
+      <SgntrSt><ds:Signature>
 <ds:SignedInfo>
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
 <ds:SignatureMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
@@ -144,7 +144,7 @@ GArnMG+84EviT5s32WzludtRRI/LLBZU3nZ8/3DAcFQOXY0la7D2VwhJf8Tg1fx2Jfg=
 </ds:X509Certificate>
 </ds:X509Data>
 </ds:KeyInfo>
-</ds:Signature></SngtrSt></Envlp>
+</ds:Signature></SgntrSt></Envlp>
     </SplmtryData>
   </CcyCtrlReqOrLttr>
 </Document>

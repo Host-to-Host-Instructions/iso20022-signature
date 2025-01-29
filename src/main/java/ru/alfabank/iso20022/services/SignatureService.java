@@ -60,7 +60,7 @@ public class SignatureService {
         DocumentBuilder documentBuilder = dbf.newDocumentBuilder();
         Document doc = documentBuilder.parse(new InputSource(new StringReader(request)));
 
-        //Получение элемента SngtrSt для наложения подписи
+        //Получение элемента SgntrSt для наложения подписи
         Node signatureNode = getSignatureNode(doc, signedElementXpath);
 
         //Процесс наложения подписи всеми указанными сертификатами.
