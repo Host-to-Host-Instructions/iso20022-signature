@@ -17,6 +17,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
+import ru.CryptoPro.JCP.JCP;
 import ru.CryptoPro.JCPxml.xmldsig.JCPXMLDSigInit;
 import ru.alfabank.iso20022.model.Certificate;
 import ru.alfabank.iso20022.model.SignatureAlgorithm;
@@ -35,6 +36,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.StringReader;
 import java.security.KeyStore;
 import java.security.PrivateKey;
+import java.security.Security;
 import java.security.cert.X509Certificate;
 import java.util.List;
 
@@ -46,6 +48,7 @@ public class SignatureService {
 
     public void init() throws Exception {
         //Инициализация JCP и загрузка keystore (достаточно 1го вызова при старте приложения)
+        registerJCPProvider();
         JCPXMLDSigInit.init();
         ks = KeyStore.getInstance("HDImageStore");
         ks.load(null, null);
@@ -134,5 +137,21 @@ public class SignatureService {
         Element node = xpathC.getElement();
         transforms.addTransform(Transforms.TRANSFORM_XPATH2FILTER, node);
         return transforms;
+    }
+
+    public static void registerJCPProvider() {
+        try {
+            // Проверяем, не добавлен ли уже провайдер
+            if (Security.getProvider("JCP") == null) {
+                Security.addProvider(new JCP());
+                System.out.println("JCP provider registered successfully");
+            } else {
+                System.out.println("JCP provider already registered");
+            }
+
+        } catch (Exception e) {
+            System.err.println("Failed to register JCP provider: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }

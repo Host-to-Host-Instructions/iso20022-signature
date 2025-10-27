@@ -33,7 +33,8 @@ public class LetterSignatureExample {
     public static void main(String[] args) throws Exception {
         SignatureService signatureService = new SignatureService();
         signatureService.init();
-
+        certificates.add(new Certificate("70ea5a4c-3626-487a-a8fe-5f3ccd64c8e0","12345"));
+        //добавили сертификат по alias (имя контейнера) и пароль.
         String request = IOUtils.resourceToString("/letter_example.txt", Charset.forName("UTF-8"));
         log.info("Request:{}", request);
         String signedRequest = signatureService.sign(request, LETTER_SIGNATURE_ELEMENT_XPATH, certificates);
